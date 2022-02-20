@@ -16,10 +16,10 @@ usermod -aG docker vagrant
 
 echo "* Clone the dockerfile from a remote repository"
 git clone https://github.com/BVAndonov/DevOps_Course.git
-cp ~/DevOps_Course/HW02/Dockerfile ~/
+cp /home/vagrant/DevOps_Course/HW02/Dockerfile /home/vagrant
 
 echo "* Clean up the unnecessary files"
-rm -rf  DevOps_Course/
+rm -rf  /home/vagrant/DevOps_Course/
 
 echo "* Build the image from the Dockerfile"
 docker image build -t apache /home/vagrant
